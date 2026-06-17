@@ -1,52 +1,39 @@
 # 🏠 House Price Prediction using Linear Regression
 
-A Machine Learning project that predicts **house prices** using **Linear Regression** based on:
+A Machine Learning project that predicts house prices using **Linear Regression** based on **area, number of bedrooms, and number of bathrooms**.
 
-- 📐 Area (Square Feet)
-- 🛏 Bedrooms
-- 🚿 Bathrooms
-
-This project was developed as **Task 01** for the **SkillCraft Technology Machine Learning Internship**.
+This project demonstrates the complete machine learning workflow, including data loading, exploratory data analysis (EDA), visualization, model training, evaluation, and price prediction using Python and Scikit-learn.
 
 ---
 
 ## 📌 Project Overview
 
-The goal of this project is to build a Linear Regression model capable of estimating house prices using basic house features.
+The objective of this project is to build a Linear Regression model capable of estimating house prices using three important features:
 
-The project includes:
+- 📐 Area (Square Feet)
+- 🛏️ Number of Bedrooms
+- 🛁 Number of Bathrooms
 
-- Data Exploration (EDA)
-- Data Visualization
-- Correlation Analysis
-- Linear Regression Model
-- Model Evaluation
-- Custom House Price Prediction
+The model is trained on the Housing Dataset and evaluated using standard regression metrics.
 
 ---
 
-## 📂 Project Structure
+## 🚀 Features
 
-```
-House-Price-Prediction-using-Linear-Regression
-│
-├── dataset/
-│   └── Housing.csv
-│
-├── images/
-│
-├── house_price_prediction.py
-├── house_price_prediction.ipynb
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
+- Load and analyze the Housing dataset
+- Perform Exploratory Data Analysis (EDA)
+- Check missing values and dataset statistics
+- Visualize data using different plots
+- Train a Linear Regression model
+- Predict house prices
+- Evaluate model performance using multiple metrics
+- Predict price for custom user input
 
 ---
 
-## 📊 Dataset
+## 📂 Dataset
 
-The dataset contains **545 house records** with features such as:
+The dataset contains information about residential properties, including:
 
 - Price
 - Area
@@ -54,39 +41,18 @@ The dataset contains **545 house records** with features such as:
 - Bathrooms
 - Stories
 - Parking
-- Air Conditioning
 - Furnishing Status
-- Main Road Access
+- Air Conditioning
 - Basement
+- Main Road
 - Guest Room
 - Preferred Area
 
-For this task, only the following features were used:
-
-- Area
-- Bedrooms
-- Bathrooms
-
-Target Variable:
-
-- Price
-
 ---
 
-## 🛠 Technologies Used
+## 📊 Exploratory Data Analysis
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-
----
-
-## 📈 Exploratory Data Analysis
-
-The following visualizations were created:
+The following visualizations are included in this project:
 
 - Distribution of House Prices
 - Correlation Heatmap
@@ -97,58 +63,56 @@ The following visualizations were created:
 
 ---
 
-## 🤖 Machine Learning Model
+## 🛠️ Technologies Used
 
-Model Used:
-
-- Linear Regression
-
-Train-Test Split:
-
-- 80% Training
-- 20% Testing
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
 ---
 
-## 📊 Model Performance
+## 📦 Project Structure
 
-| Metric | Value |
-|---------|--------|
-| MAE | 1,265,275.67 |
-| MSE | 2,750,040,479,309.05 |
-| RMSE | 1,658,324.60 |
-| R² Score | 0.4559 |
-
----
-
-## 🚀 Features
-
-- Data Loading
-- Data Cleaning
-- Data Visualization
-- Correlation Analysis
-- Linear Regression
-- House Price Prediction
-- Performance Evaluation
-- User Input Prediction
+```
+House-Price-Prediction-using-Linear-Regression
+│
+├── dataset/
+│   └── Housing.csv
+│
+├── house_price_prediction.py
+├── house_price_prediction.ipynb
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
+```
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/House-Price-Prediction-using-Linear-Regression.git
+git clone https://github.com/Pankaj70768/House-Price-Prediction-using-Linear-Regression.git
 ```
 
-Install dependencies
+Move into the project directory
+
+```bash
+cd House-Price-Prediction-using-Linear-Regression
+```
+
+Install the required libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run
+Run the project
 
 ```bash
 python house_price_prediction.py
@@ -156,35 +120,37 @@ python house_price_prediction.py
 
 ---
 
-## 📸 Output
+## 📈 Model Performance
 
-- Dataset Information
-- Correlation Heatmap
-- Scatter Plots
-- Model Performance
-- House Price Prediction
+The model is evaluated using:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score
 
 ---
 
-## 💡 Future Improvements
+## 🎯 Future Improvements
 
-- Feature Scaling
-- Polynomial Regression
-- Random Forest Regression
-- XGBoost Regressor
-- Hyperparameter Tuning
-- Model Deployment using Streamlit
+- Use all available features for better prediction
+- Apply Feature Engineering
+- Compare multiple regression algorithms
+- Build a Streamlit Web Application
+- Deploy the model online
 
 ---
 
 ## 👨‍💻 Author
 
-**Pankaj Kumar**
+**Pankaj**
 
 GitHub: https://github.com/Pankaj70768
 
-LinkedIn: https://www.linkedin.com/in/pankaj-kumar-378b4229b/
+LinkedIn: https://www.linkedin.com/in/pankaj-kumar-378b4229b
 
 ---
 
-## ⭐ If you found this project helpful, consider giving it a Star!
+## 📄 License
+
+This project is licensed under the MIT License.
